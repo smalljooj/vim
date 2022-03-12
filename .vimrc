@@ -1,5 +1,6 @@
 " Global settings "
 syntax enable
+filetype on
 set number
 set tabstop=4
 set hidden
@@ -21,6 +22,9 @@ filetype plugin on
 filetype indent on
 set clipboard=unnamed
 
+" commands "
+
+autocmd BufRead,BufNewFile *.dhtml set filetype=html
 
 " plugins "
 call plug#begin()
@@ -60,7 +64,7 @@ let g:airline_powerline_fonts = 1
 
 "Remaps"
 
-nmap <C-a> :NERDTreeToggle<CR>
+"nmap <C-a> :NERDTreeToggle<CR>
 nmap <C-h> :tabp<CR>
 nmap <C-l> :tabn<CR>
 
@@ -79,7 +83,7 @@ let g:ale_fix_on_save = 1
 " COC "
 
 
-let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-clangd', 'coc-omnisharp', 'coc-html', 'coc-python']
+let g:coc_global_extensions = [ 'coc-snippets', 'coc-explorer', 'coc-clangd', 'coc-omnisharp', 'coc-html', 'coc-python', 'coc-tsserver']
 
 " Set internal encoding of vim, not needed on neovim, since coc.nvim using some
 " unicode characters in the file autoload/float.vim
