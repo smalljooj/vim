@@ -23,9 +23,6 @@ filetype plugin on
 filetype indent on
 set clipboard=unnamed
 
-" commands "
-
-autocmd BufRead,BufNewFile *.dhtml set filetype=html
 
 " plugins "
 call plug#begin()
@@ -43,8 +40,11 @@ Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'mattn/emmet-vim'
-Plug 'jlcrochet/vim-razor'
 call plug#end()
+
+" commands "
+
+autocmd BufRead,BufNewFile *.dhtml set filetype=html
 
 " Themes "
 if exists('+termguicolors')
