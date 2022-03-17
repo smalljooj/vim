@@ -17,6 +17,7 @@ set splitbelow
 set autoread
 set mouse=a
 set nowrap
+set encoding=utf-8
 filetype on
 filetype plugin on
 filetype indent on
@@ -42,6 +43,7 @@ Plug 'honza/vim-snippets'
 Plug 'jiangmiao/auto-pairs'
 Plug 'OmniSharp/omnisharp-vim'
 Plug 'mattn/emmet-vim'
+Plug 'jlcrochet/vim-razor'
 call plug#end()
 
 " Themes "
